@@ -29,7 +29,7 @@ const SearchResults = async ({ params: { searchTerm } }: Props) => {
   const data = await wikiData;
   const results: Result[] | undefined = data?.query?.pages;
   const content = (
-    <main className="bg-slate-200 mx-auto max-w-lg py-1 min-h-screen">
+    <main className="bg-slate-200 py-1 min-h-screen">
       <>
         {results ? (
           Object.values(results).map((result) => {
